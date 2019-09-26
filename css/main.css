@@ -49,7 +49,7 @@ a:not([class*=margin]):last-child, span:not([class*=margin]):not([class*=mr-]):l
 .line_height1_lInherit {line-height:1 !important;}
 .line_height1 {line-height:1 !important;}
 .line_height1_5 {line-height:1.5 !important;}
-.color_white, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a, ul.uk-text-contrast>li>a, nav.uk-text-contrast>.uk-button-dropdown>a, .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
+.color_white, .color_white *, .color_white [class*=color_], .color_white a[class*=color_]:hover, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a, ul.uk-text-contrast>li>a, nav.uk-text-contrast>.uk-button-dropdown>a, .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
 input.color_white::placeholder, textarea.color_white::placeholder, input.color_white ::placeholder, textarea.color_white ::placeholder {color: white !important;}
 input.color_white:-ms-input-placeholder, textarea.color_white:-ms-input-placeholder, input.color_white :-ms-input-placeholder, textarea.color_white :-ms-input-placeholder {color: white !important;}
 input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeholder, input.color_white ::-ms-input-placeholder, textarea.color_white ::-ms-input-placeholder {color: white !important;}
@@ -60,7 +60,7 @@ input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeh
 .color_primary, .color_primary *, .color_primary, .hover_color_primary:focus, .hover_color_primary:hover {color: #009dd8 !important;}
 .color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover {color: #82bb42 !important;}
 .bg_white, .bg_hover_white {background-color: white !important;}
-.bg_hover_white_color_primary:hover {color: #009dd8 !important; background-color: white;}
+.bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover, [class*=color_] a.bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover>* path {color: #009dd8 !important; background-color: white;}
 input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:before {background: #fafafa !important;}
 .bg_whiteOpacity3, ul[class*=uk-navbar].color_white>li:hover>a, ul[class*=uk-navbar].color_white>li:focus>a, ul[class*=uk-navbar].color_white>li.uk-open>a, ul.uk-text-contrast>li:hover>a, ul.uk-text-contrast>li:focus>a, ul.uk-text-contrast>li.uk-open>a, nav:not(.bg_white)>.uk-button-dropdown>a.active, nav:not(.bg_white)>.uk-button-dropdown>a:focus, nav:not(.bg_white)>.uk-button-dropdown>a:hover, .uk-button-dropdown[aria-expanded="true"]>a {background-color: rgba(255, 255, 255, 0.3);}
 .bg_whiteOpacity5, .bg_hover_whiteOpacity5:focus, .bg_hover_whiteOpacity5:hover {background-color: rgba(255, 255, 255, 0.3) !important;}
@@ -1326,6 +1326,8 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
     background: linear-gradient(to top, rgb(130, 187, 66) 85%, rgba(255, 255, 255, 0) 100%);
 }
 .min_heightL300 {min-height: 300px;}
+.min_heightL400 {min-height: 400px;}
+.min_heightL500 {min-height: 500px;}
 .min_heightL600 {min-height: 600px;}
 .min_heightL700 {min-height: 700px;}
 .min_heightL800 {min-height: 800px;}

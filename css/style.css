@@ -4,7 +4,7 @@
 a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #ff6d24 !important;}
 .color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #df5332 !important;}
 a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #c54b2e !important;}
-.bg_hover_white_color_primary:focus, .bg_hover_white_color_primary:hover {color: #fd9646 !important; background-color: white;}
+.bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover, [class*=color_] a.bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover>* path {color: #fd9646 !important; background-color: white;}
 .bg_primary, .btn_primary, .hover_bg_primary:hover, ul.hover_bg_primary>li>a:focus, ul.hover_bg_primary>li>a:hover, .uk-block-primary, .uk-pagination>li.uk-active span {color: white !important;background-color: #fd9646 !important;}
 .bg_secondary, .btn_secondary, .hover_bg_secondary:hover, nav.bg_secondary .uk-dropdown a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, .uk-block-secondary {color: white !important;background-color: #df5332 !important;}
 .btn_primary:focus, .btn_primary:hover, .btn_primary.selected {text-decoration: none; background-color: #ff6d24 !important;}
