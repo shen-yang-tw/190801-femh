@@ -1,13 +1,13 @@
 @charset "utf-8";
 .link a:link, .link a:visited, .link a:focus, .uk-breadcrumb a:link, .uk-breadcrumb a:visited, .uk-breadcrumb a:focus {color: #fd9646;}
-.color_primary, .color_primary *, .hover_color_primary:focus, .hover_color_primary:hover, ul.hover_color_primary>li>a:focus, ul.hover_color_primary>li>a:hover {color: #fd9646 !important;}
-a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #ff6d24 !important;}
+.color_primary, .color_primary *, .hover_color_primary:focus, .hover_color_primary:hover, ul.hover_color_primary>li>a:focus, ul.hover_color_primary>li>a:hover {color: #e07623 !important;}
+a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #e6611f !important;}
 .color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #df5332 !important;}
 a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #c54b2e !important;}
 .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover, [class*=color_] a.bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover>* path {color: #fd9646 !important; background-color: white;}
 .bg_primary, .btn_primary, .hover_bg_primary:hover, ul.hover_bg_primary>li>a:focus, ul.hover_bg_primary>li>a:hover, .uk-block-primary, .uk-pagination>li.uk-active span {color: white !important;background-color: #fd9646 !important;}
 .bg_secondary, .btn_secondary, .hover_bg_secondary:hover, nav.bg_secondary .uk-dropdown a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, .uk-block-secondary {color: white !important;background-color: #df5332 !important;}
-.btn_primary:focus, .btn_primary:hover, .btn_primary.selected {text-decoration: none; background-color: #ff6d24 !important;}
+.btn_primary:focus, .btn_primary:hover, .btn_primary.selected {text-decoration: none; background-color: #e9883e !important;}
 .btn_secondary:focus, .btn_secondary:hover {background-color: #c54b2e !important;}
 .border_secondary {border-color: #df5332}
 .fontsize li>a {color: #fd9646 !important; border: 1px solid #fd9646;}
@@ -73,7 +73,7 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
   border-bottom: 2px solid #dcdada;
 }
 .listTabs .uk-nav a {
-  color: #fd9646;
+  color: #e07623;
   padding: 5px 15px;
 }
 .listTabs.listIconIndent .uk-nav a {
@@ -91,7 +91,7 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
 .listTabs .uk-nav-sub>li[aria-expanded="false"] li[aria-expanded="true"]>a,
 .listTabs li.level3 .uk-nav-sub>li[aria-expanded="false"] li[aria-expanded="true"]>a,
 .listTabs .uk-nav>li.level3 li li>a {
-  color: #fd9646 !important;
+  color: #e07623 !important;
   background-color: transparent;
 }
 .listTabs .uk-nav li a:hover,
@@ -191,6 +191,14 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
 
 .logo {display: flex;}
 .logo img {max-height: 30px;}
+
+#header #logoMenuBar *, #header .menuBar * {
+  color: black !important;
+}
+.page .banner .uk-cover-background {
+  background-image: url(../img/banner-page.jpg) !important;
+}
+/* .page .uk-list {} */
 
 footer, footer a {color: white !important;}
 

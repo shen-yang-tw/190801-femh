@@ -39,7 +39,7 @@
       <div class="uk-position-relative uk-visible-large">
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
-          <ul class="topList list_horizontal list_line color_white uk-text-center">
+          <ul class="topList list_horizontal list_line color_white uk-text-right">
             <li><a class="hover_linkline" href="#" title="#">圖書館</a></li>
             <li><a class="hover_linkline" href="#" title="#">最新消息</a></li>
             <li><a class="hover_linkline" href="#" title="#">常見問題</a></li>
@@ -52,19 +52,20 @@
         <!-- <div class="bg_secondary opacity20 uk-overlay-panel"></div> -->
         <div class="uk-container uk-container-center">
           <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-3-6 uk-width-large-2-5 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
-            </div>
-            <div class="uk-width-2-6 uk-padding-remove uk-vertical-align uk-hidden-large">
-              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold">電子資源管理系統<span class="ml-1 uk-hidden-small">Research Eyes</span></small></div>
-            </div>
-            <div id="btn_canvas" class="uk-width-1-6 uk-vertical-align uk-text-right uk-hidden-large">
+            <div class="uk-width-3-6 uk-width-large-3-10 uk-padding-remove uk-vertical-align uk-visible-large"></div>
+            <div id="btn_canvas" class="uk-width-1-6 uk-padding-remove uk-vertical-align uk-hidden-large">
               <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
             </div>
-            <div class="uk-width-large-3-5 uk-padding-remove uk-vertical-align uk-visible-large">
-              <div class="text_center_lL uk-width-1-1 uk-vertical-align-middle">
+            <div class="uk-width-2-6 uk-width-small-3-6 uk-padding-remove uk-vertical-align uk-hidden-large">
+              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold">電子資源管理系統<span class="ml-1 uk-hidden-small">Research Eyes</span></small></div>
+            </div>
+            <div class="uk-width-large-4-10 uk-padding-remove uk-vertical-align uk-visible-large">
+              <div class="text_center uk-width-1-1 uk-vertical-align-middle">
                 <h4 class="uk-text-contrast uk-margin-remove"><span class="padding_small uk-text-bold">電子資源管理系統<span class="headerSpan uk-margin-small-left">Research Eyes</span></span></h4>
               </div>
+            </div>
+            <div class="uk-width-3-6 uk-width-small-2-6 uk-width-large-3-10 uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo uk-flex-right uk-width-1-1" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
             </div>
           </div>
           <!-- #logoMenuBar -->
@@ -166,105 +167,107 @@
         </div>
         <div class="uk-grid uk-grid-small uk-margin-top" data-uk-grid-margin>
           <div class="uk-width-large-1-4 uk-width-xlarge-1-5">
-            <div class="listTabs uk-form uk-visible-large uk-visible-hover">
-              <p class="uk-margin-small uk-clearfix">細分您的搜尋結果<a class="btn_primary line_height1 float-right uk-button uk-button-small uk-hidden" href="#" role="button">套用篩選</a></p>
-              <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-grid uk-grid-collapse uk-grid-divider uk-grid-width-1-2 uk-grid-width-medium-1-3  uk-grid-width-large-1-1 uk-margin-remove" data-uk-nav="{multiple:true}">
-                <li class="position-relative uk-parent uk-padding-remove uk-active">
-                  <a href="#">資料類型</a>
+            <div class="listTabs listIconIndent uk-visible-large">
+              <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-grid uk-grid-collapse uk-grid-divider uk-grid-width-large-1-1 uk-margin-remove" data-uk-nav="{multiple:true}">
+                <li class="uk-parent uk-padding-remove uk-active">
+                  <a href="#" title="#">資源類型</a>
                   <ul class="uk-nav-sub uk-padding-remove">
-                    <li class="listMore">
-                      <!-- <div class="uk-flex uk-flex-middle uk-flex-space-between">
-                        <div class="uk-width-1-1">
-                          <a class="" href="#" role="checkbox" data-uk-toggle="{target:'>.check_plus', cls:'hidden'}"><span class="check_plus check_minus"><i class="mr-1 uk-icon-justify uk-icon-square-o"></i></span><span class="check_plus hidden"><i class="mr-1 uk-icon-justify uk-icon-plus-square"></i></span></a><span class="check_minus hidden"><i class="mr-1 uk-icon-justify uk-icon-minus-square"></i></span><a class="" href="#" role="checkbox">資料庫<span class="parentheses uk-text-small">999</span></a>
-                        </div>
-                        <div>
-                          <a class="" href="#" role="checkbox" data-uk-toggle="{target:'.check_minus', cls:'hidden'}"><span class="uk-hidden"><i class="mr-1 uk-icon-justify uk-icon-minus-square"></i></span></a>
-                        </div>
-                      </div> -->
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">資料庫<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                    <li class="uk-active">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
                     </li>
                     <li>
                       <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
                     </li>
-                    <li class="listMore hidden">
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
                     </li>
-                    <li class="listMore hidden">
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
                     </li>
                   </ul>
                 </li>
-                <li class="position-relative uk-parent uk-padding-remove">
-                  <a href="#" title="#">語言</a>
+                <li class="uk-parent uk-padding-remove">
+                  <a href="#" title="#">出版年</a>
                   <ul class="uk-nav-sub uk-padding-remove">
                     <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">生命科學與醫學<span class="parentheses uk-text-small">999</span></label>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
                     </li>
                     <li>
                       <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
                     </li>
-                    <li class="listMore hidden">
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
                     </li>
-                    <li class="listMore hidden">
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
                     </li>
                   </ul>
                 </li>
-                <li class="position-relative uk-parent uk-padding-remove">
+                <li class="uk-parent uk-padding-remove">
+                  <a href="#" title="#">作者</a>
+                  <ul class="uk-nav-sub uk-padding-remove">
+                    <li>
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li>
+                      <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="uk-parent uk-padding-remove">
                   <a href="#" title="#">主題</a>
                   <ul class="uk-nav-sub uk-padding-remove">
                     <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li>
+                      <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
                     </li>
                   </ul>
                 </li>
-                <li class="position-relative uk-parent uk-padding-remove">
-                  <a href="#" title="#">類型</a>
+                <li class="uk-parent uk-padding-remove">
+                  <a href="#" title="#">語言</a>
                   <ul class="uk-nav-sub uk-padding-remove">
                     <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li>
+                      <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
                     </li>
                   </ul>
                 </li>
-                <li class="position-relative uk-parent uk-padding-remove">
-                  <a href="#" title="#">適用學系</a>
+                <li class="uk-parent uk-padding-remove">
+                  <a href="#" title="#">標籤</a>
                   <ul class="uk-nav-sub uk-padding-remove">
                     <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
                     </li>
-                  </ul>
-                </li>
-                <li class="position-relative uk-parent uk-padding-remove">
-                  <a href="#" title="#">平台</a>
-                  <ul class="uk-nav-sub uk-padding-remove">
                     <li>
-                      <a href="#">
-                        <label class="m-0"><input class="listCheck bg-white mr-1" type="checkbox">Type<span class="parentheses uk-text-small">999</span></label>
-                      </a>
+                      <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
+                    </li>
+                    <li class="listMore uk-hidden">
+                      <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
                     </li>
                   </ul>
                 </li>
@@ -273,24 +276,47 @@
           </div>
           <div class="uk-width-large-3-4 uk-width-xlarge-4-5">
             <div id="boundary" class="uk-position-relative">
-              <div class="uk-button-dropdown uk-position-top-right uk-hidden-large" data-uk-dropdown="{boundary:'#boundary', pos:'bottom-right'}">
-                <!-- <a class="fontSize1_2 padding_small uk-display-inline-block uk-text-bold" href="#" title="#">細分搜尋結果</a> -->
-                <button class="uk-button" type="button">細分搜尋結果</button>
-                <div class="uk-dropdown uk-position-z-index">
-                  <ul class="uk-nav uk-nav-dropdown uk-text-left">
-                    <li class="m-0 uk-nav-header">Type</li>
-                    <li class="px-2 py-1">
-                        <label class="m-0 w-100"><input class="listCheck bg-white mr-1" type="checkbox">Option<span class="parentheses uk-text-small">999</span></label>
-                    </li>
-                    <li class="m-0 uk-nav-header">Type</li>
-                    <li class="px-2 py-1">
-                        <label class="m-0 w-100"><input class="listCheck bg-white mr-1" type="checkbox">Option<span class="parentheses uk-text-small">999</span></label>
-                    </li>
-                    <li class="px-2 py-1"><span class="w-100"><a class="btn_primary w-100 uk-button uk-button-small uk-dropdown-close" href="#" role="button">套用篩選</a></span></li>
-                  </ul>
+              <div class="uk-flex uk-flex-space-between">
+                <div class="uk-button-dropdown uk-hidden-large" data-uk-dropdown="{boundary:'#boundary', pos:'bottom-left'}">
+                  <button class="btn_primary borderRadiusBtm0 uk-button uk-button-large" type="button"><i class="mr-1 uk-icon-navicon"></i>全部瀏覽</button>
+                  <div class="uk-dropdown uk-position-z-index">
+                    <ul class="uk-nav uk-nav-dropdown uk-text-left" data-uk-switcher="{connect:'#switcher'}">
+                      <li>
+                        <a href="#" title="#">全部瀏覽</a>
+                      </li>
+                      <li>
+                        <a href="#" title="#">主題瀏覽</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="uk-button-dropdown uk-hidden-large" data-uk-dropdown="{boundary:'#boundary', pos:'bottom-right'}">
+                  <button class="uk-button" type="button">細分搜尋結果</button>
+                  <div class="uk-dropdown uk-position-z-index">
+                    <ul class="uk-nav uk-nav-dropdown uk-text-left">
+                      <li class="m-0 uk-nav-header">Type</li>
+                      <li>
+                        <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
+                      </li>
+                      <li class="m-0 uk-nav-header">Type</li>
+                      <li>
+                        <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab1<span class="parentheses uk-text-small">999</span></a>
+                      </li>
+                      <li>
+                        <a class="btnMore uk-text-small uk-text-right" href="#" title="#">More</a>
+                      </li>
+                      <li class="listMore uk-hidden">
+                        <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab2<span class="parentheses uk-text-small">999</span></a>
+                      </li>
+                      <li class="listMore uk-hidden">
+                        <a href="#" title="#"><i class="fas fa-caret-right fa-fw"></i>Tab3<span class="parentheses uk-text-small">999</span></a>
+                      </li>
+                      <li class="px-2 py-1"><span class="w-100"><a class="btn_primary w-100 uk-button uk-button-small uk-dropdown-close" href="#" role="button">套用篩選</a></span></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <ul class="tab_primary uk-tab" data-uk-tab="{connect:'#switcher'}">
+              <ul class="tab_primary uk-tab uk-visible-large" data-uk-tab="{connect:'#switcher'}">
                 <li>
                   <a href="#" title="#">全部瀏覽</a>
                 </li>
@@ -319,7 +345,7 @@
                   <a href="#" title="#">熱門推薦</a>
                 </li>
               </ul>
-              <div class="border borderTop0">
+              <div class="border borderTop0@l">
                 <ul id="switcher" class="min_heightL600 uk-switcher uk-margin">
                   <li class="py-2 py-lg-3">
                     <div class="px-2 px-lg-3 uk-margin">

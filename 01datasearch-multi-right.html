@@ -39,7 +39,7 @@
       <div class="uk-position-relative uk-visible-large">
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
-          <ul class="topList list_horizontal list_line color_white uk-text-center">
+          <ul class="topList list_horizontal list_line color_white uk-text-right">
             <li><a class="hover_linkline" href="#" title="#">圖書館</a></li>
             <li><a class="hover_linkline" href="#" title="#">最新消息</a></li>
             <li><a class="hover_linkline" href="#" title="#">常見問題</a></li>
@@ -52,19 +52,20 @@
         <!-- <div class="bg_secondary opacity20 uk-overlay-panel"></div> -->
         <div class="uk-container uk-container-center">
           <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-3-6 uk-width-large-2-5 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
-            </div>
-            <div class="uk-width-2-6 uk-padding-remove uk-vertical-align uk-hidden-large">
-              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold">電子資源管理系統<span class="ml-1 uk-hidden-small">Research Eyes</span></small></div>
-            </div>
-            <div id="btn_canvas" class="uk-width-1-6 uk-vertical-align uk-text-right uk-hidden-large">
+            <div class="uk-width-3-6 uk-width-large-3-10 uk-padding-remove uk-vertical-align uk-visible-large"></div>
+            <div id="btn_canvas" class="uk-width-1-6 uk-padding-remove uk-vertical-align uk-hidden-large">
               <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
             </div>
-            <div class="uk-width-large-3-5 uk-padding-remove uk-vertical-align uk-visible-large">
-              <div class="text_center_lL uk-width-1-1 uk-vertical-align-middle">
+            <div class="uk-width-2-6 uk-width-small-3-6 uk-padding-remove uk-vertical-align uk-hidden-large">
+              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold">電子資源管理系統<span class="ml-1 uk-hidden-small">Research Eyes</span></small></div>
+            </div>
+            <div class="uk-width-large-4-10 uk-padding-remove uk-vertical-align uk-visible-large">
+              <div class="text_center uk-width-1-1 uk-vertical-align-middle">
                 <h4 class="uk-text-contrast uk-margin-remove"><span class="padding_small uk-text-bold">電子資源管理系統<span class="headerSpan uk-margin-small-left">Research Eyes</span></span></h4>
               </div>
+            </div>
+            <div class="uk-width-3-6 uk-width-small-2-6 uk-width-large-3-10 uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo uk-flex-right uk-width-1-1" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
             </div>
           </div>
           <!-- #logoMenuBar -->
@@ -398,9 +399,11 @@
                     </div>
                     <ul class="uk-list uk-list-striped">
                       <li class="p-2 p-lg-3">
-                        <h4 class="underline uk-text-bold uk-padding-remove"><a class="color_secondary" href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)1<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                        <h4 class="underline uk-text-bold uk-padding-remove"><a class="color_secondary" href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
                         <div class="position-relative flex-wrap uk-flex uk-flex-middle uk-margin-small">
                           <div class="child_margin flex-grow-1 mr-1"><span class="bg_secondary px-1 mb-1">新到資源</span><span class="bg_secondary px-1 mb-1">試用</span><span class="bg_secondary px-1 mb-1">免費</span></div>
+                          <div class="child_margin"><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a><span style="width: 50px;"></span></div>
+                          <div class="child_margin uk-position-top-right"><a class="px-1 mb-1 uk-button uk-button-small" href="#" data-uk-toggle="{target:'.detail01', cls: 'hidden'}"><span class="detail01"><i class="mr-1 fas fa-plus-circle"></i></span><span class="detail01 hidden"><i class="mr-1 fas fa-minus-circle"></i></span>簡介</a></div>
                         </div>
                         <div class="child_marginB10 detail01 hidden visible@l">
                           <div class="urlFix d-inline-block mr-3 mr-sm-5">
@@ -442,74 +445,20 @@
                             <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
                             <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
                           </div>
-                        </div>
-                        <div class="position-relative flex-wrap uk-flex uk-flex-middle uk-margin-small">
-                          <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.offcanvas'), 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
-                          <div class="child_margin"><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
-                        </div>
-                        <div class="offcanvas hidden">
-                          <div class="bg_transparent offcanvas-bar uk-position-fixed">
-                            <div class="uk-overlay-panel"></div>
-                            <div class="padding_medium min_height100vh uk-position-relative">
-                              <div class="bg_primary opacity90 uk-overlay-panel"></div>
-                              <div class="uk-position-relative">
-                                <p class="m-0"><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.offcanvas'), 'hidden'); return false;">關閉</button></p>
-                                <h4 class="color_white underline mt-2 uk-text-bold"><a href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)1<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                                <div class="uk-overflow-container">
-                                  <table class="uk-table uk-table-condensed">
-                                    <tbody>
-                                      <tr>
-                                        <td class="min_width100 pr-2">相關題名</td>
-                                        <td>Web of Science (SCIE) WOS-SCIE Web of Science</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">資料類型</td>
-                                        <td>資料庫</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">平　　台</td>
-                                        <td><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">狀　　態</td>
-                                        <td>訂購</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">語　　言</td>
-                                        <td>西文</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">類　　型</td>
-                                        <td><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">主　　題</td>
-                                        <td><a class="linkline uk-text-bold" href="#" title="#">科學工</a></td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">校外連線</td>
-                                        <td>可校外連線</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">使用手冊</td>
-                                        <td>快速參考指南</td>
-                                      </tr>
-                                      <tr>
-                                        <td class="min_width100 pr-2">簡介</td>
-                                        <td><span class="editor" style="color: red;">提供台灣</span>地區的消費者消費趨勢與生活型態的調查資料。可探知200個以上商品市場及數百類目標消費群之生活意見與態度，並提供台灣市場行銷與品牌化(Branding)重要資訊，協助發展新商品概念、找尋目標消費者、市場區隔、傳播策略、品牌管理。<span class="editor" style="color: blue;">快速參考指南</span></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="detail01 hidden">
+                            <p class="urlFix mt-0">
+                              <span class="border px-1 mr-1">簡　　介</span>開來毒展中原，一園入政好冷合雙氣環於件！務情為團者位關始……不保命金中團小益計是於濟層時影區：說流樣也今先園明府新？類員什大，朋種事社難水果雖關間參造性每社成權做戲時好。記用帶，長問回構國布相……長個外到、因對明室，的客創開體，本可念！支了時生省人像室。美上人情什這片，於機出運進高光進步決停參注友，得實新大須告案爾適相海力及報行能路馬效主聲也體人選小國基量代其發民說盡一葉表年生、說市其選國物型，白速出前，立院然
+                            </p>
                           </div>
                         </div>
+                        <p class="child_margin m-0 uk-text-small"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a></p>
                       </li>
                       <li class="p-2 p-lg-3">
-                        <h4 class="underline uk-text-bold uk-padding-remove"><a class="color_secondary" href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)2<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                        <h4 class="underline uk-text-bold uk-padding-remove"><a class="color_secondary" href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
                         <div class="position-relative flex-wrap uk-flex uk-flex-middle uk-margin-small">
                           <div class="child_margin flex-grow-1 mr-1"><span class="bg_secondary px-1 mb-1">新到資源</span><span class="bg_secondary px-1 mb-1">試用</span><span class="bg_secondary px-1 mb-1">免費</span></div>
+                          <div class="child_margin"><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a><span style="width: 50px;"></span></div>
+                          <div class="child_margin uk-position-top-right"><a class="px-1 mb-1 uk-button uk-button-small" href="#" data-uk-toggle="{target:'.detail02', cls: 'hidden'}"><span class="detail02"><i class="mr-1 fas fa-plus-circle"></i></span><span class="detail02 hidden"><i class="mr-1 fas fa-minus-circle"></i></span>簡介</a></div>
                         </div>
                         <div class="child_marginB10 detail02 hidden visible@l">
                           <div class="urlFix d-inline-block mr-3 mr-sm-5">
@@ -551,32 +500,13 @@
                             <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
                             <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
                           </div>
-                        </div>
-                        <div class="position-relative flex-wrap uk-flex uk-flex-middle uk-margin-small">
-                          <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.offcanvas'), 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
-                          <div class="child_margin"><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_secondary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
-                        </div>
-                        <div class="offcanvas hidden">
-                          <div class="bg_transparent offcanvas-bar uk-position-fixed">
-                            <div class="uk-overlay-panel"></div>
-                            <div class="padding_medium min_height100vh uk-position-relative">
-                              <div class="bg_primary opacity90 uk-overlay-panel"></div>
-                              <div class="uk-position-relative">
-                                <h4 class="color_white underline uk-text-bold"><a href="#" title="#">Science Citation Index Expanded--SCIE (Web of Science)2<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">相關題名</span>Web of Science (SCIE) WOS-SCIE Web of Science</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">資料類型</span>資料庫</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">平　　台</span><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">簡　　介</span>為美國Thomson Reuters 於 1997 年間建置之引用文獻索引資料庫系統。收錄科學技術類期刊計 8,280 餘種(較光碟版約多2,000 餘種)，涵蓋主題約150 餘種。</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">狀　　態</span>訂購</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">語　　言</span>西文</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">類　　型</span><a class="linkline uk-text-bold" href="#" title="#">索引摘要</a></p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">主　　題</span><a class="linkline uk-text-bold" href="#" title="#">科學工</a></p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">校外連線</span>可校外連線</p>
-                                <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">使用手冊</span>快速參考指南</p>
-                              </div>
-                            </div>
+                          <div class="detail02 hidden">
+                            <p class="urlFix mt-0">
+                              <span class="border px-1 mr-1">簡　　介</span>開來毒展中原，一園入政好冷合雙氣環於件！務情為團者位關始……不保命金中團小益計是於濟層時影區：說流樣也今先園明府新？類員什大，朋種事社難水果雖關間參造性每社成權做戲時好。記用帶，長問回構國布相……長個外到、因對明室，的客創開體，本可念！支了時生省人像室。美上人情什這片，於機出運進高光進步決停參注友，得實新大須告案爾適相海力及報行能路馬效主聲也體人選小國基量代其發民說盡一葉表年生、說市其選國物型，白速出前，立院然
+                            </p>
                           </div>
                         </div>
+                        <p class="child_margin m-0 uk-text-small"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a></p>
                       </li>
                     </ul>
                     <div class="px-2 px-lg-3 uk-form uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
