@@ -85,7 +85,7 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
 }
 .listTabs .uk-nav>li.uk-open>a,
 .nav_side .uk-nav>li.uk-open>a {
-  background: #c1ced4  !important;
+  background: #999  !important;
   color: white !important;
 }
 .listTabs .uk-nav-sub>li[aria-expanded="false"] li[aria-expanded="true"]>a,
@@ -198,7 +198,12 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
 .page .banner .uk-cover-background {
   background-image: url(../img/banner-page.jpg) !important;
 }
-/* .page .uk-list {} */
+
+#logoMenuBar .menuBar>nav {
+  display: inline-block;
+  background-color: RGB(0,130,35,0.2);
+  margin-top: 5px;
+}
 
 footer, footer a {color: white !important;}
 
