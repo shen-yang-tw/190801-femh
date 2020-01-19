@@ -201,7 +201,7 @@ ol.listDecimalRow.badge>li:before {background: #fd9646;}
 
 #logoMenuBar .menuBar>nav {
   display: inline-block;
-  background-color: RGB(0,130,35,0.2);
+  background-color: rgba(0,130,35,0.2);
   margin-top: 5px;
 }
 
