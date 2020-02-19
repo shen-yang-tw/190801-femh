@@ -212,6 +212,9 @@ body {
 span.highlighted {
   color: #008223 !important;
 }
+h2.underline {
+    font-weight: 900;
+}
 
 footer, footer a {color: white !important;}
 
