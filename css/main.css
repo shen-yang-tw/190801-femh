@@ -27,7 +27,7 @@ q {font-style: normal; padding: 0 5px;}
 :not([class*=uk-nav] [class*=uk-tab]) a:hover {transition: all 500ms ease;}
 .transition_disabled {transition: none;}
 /* unvisited link */
-a:not(.uk-close):link, a:not(.uk-close):visited, a:not(.uk-close):focus {color: #000; outline-color: transparent;}
+/* a:not(.uk-close):link, a:not(.uk-close):visited, a:not(.uk-close):focus {color: #000; outline-color: transparent;} */
 a:hover, a:active {color: #000; text-decoration: underline;}
 /* selected link */
 a:active {color: darkgrey;}
@@ -43,7 +43,7 @@ a:not([class*=margin]):last-child, span:not([class*=margin]):not([class*=mr-]):l
 .fontSize1_4 {font-size: 1.4rem;}
 .underline {border-bottom: 1px solid #ddd; padding-bottom: 5px;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover, a:hover>.remove_underline, nav a:hover {border-bottom: 0; text-decoration: none; transition: none;}
-.linkline, .hover_linkline:hover {text-decoration: underline !important;}
+.linkline, .hover_linkline:hover, .hover_linkline:hover>* {text-decoration: underline !important;}
 .linkline:hover {text-decoration: none !important;}
 .lineHeight_normal {line-height: normal;}
 .line_height1_lInherit {line-height:1 !important;}
@@ -58,7 +58,7 @@ input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeh
 .color_defaultGrey, .color_defaultGrey *, .hover_color_defaultGrey:focus, .hover_color_defaultGrey:hover {color: #999 !important;}
 .color_grey, .color_grey *, .hover_color_grey:focus, .hover_color_grey:hover {color: #5f6769 !important;}
 .color_primary, .color_primary *, .color_primary, .hover_color_primary:focus, .hover_color_primary:hover {color: #009dd8 !important;}
-.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover {color: #82bb42 !important;}
+.color_secondary, .hover_color_secondary:focus, .hover_color_secondary:hover {color: #82bb42 !important;}
 .bg_white, .bg_hover_white {background-color: white !important;}
 .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover, [class*=color_] a.bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover>* path {color: #009dd8 !important; background-color: white;}
 input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:before {background: #fafafa !important;}
@@ -130,7 +130,7 @@ input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:b
 .child_margin>:not(:last-child) {margin-right: 5px; margin-bottom: 5px;}
 .child_margin10>:not(:last-child) {margin-right: 10px; margin-bottom: 10px;}
 .child_margin15>:not(:last-child) {margin-right: 15px; margin-bottom: 15px;}
-.child_marginB10_all>* {margin-bottom: 10px;}
+.child_margin_all>* {margin-bottom: 10px;}
 .child_marginB10>:not(:last-child) {margin-bottom: 10px;}
 .child_marginB15>:not(:last-child) {margin-bottom: 15px;}
 .margin_small {margin: 5px;}
@@ -712,7 +712,7 @@ input:not([type]).uk-form-large, input[type].uk-form-large, select.uk-form-large
 }
 
 .uk-offcanvas:not(#offcanvas) .uk-offcanvas-bar *,
-.uk-offcanvas:not(#offcanvas) .uk-offcanvas-bar a, .offcanvas>div *, .offcanvas>div a {
+.uk-offcanvas:not(#offcanvas) .uk-offcanvas-bar a, .offcanvas>div *:not([color]):not([style]):not(a), .offcanvas>div a {
   color: #212529 !important;
 }
 
@@ -752,6 +752,14 @@ input:not([type]).uk-form-large, input[type].uk-form-large, select.uk-form-large
 /* .offcanvas>div>div:nth-child(2){
   min-height: 2000px;
 } */
+
+.offcanvas .editor a {
+    color: blue !important;
+    text-decoration: underline;
+}
+.offcanvas .editor a:hover {
+    color: black !important;
+}
 
 /*uk-small*/
 @media (min-width:480px) {
@@ -1007,6 +1015,18 @@ textarea {min-height: 100px;}
   text-align: right;
 }
 
+.highlight {
+  color: red !important;
+}
+a {
+  color: blue;
+}
+ul>li>*, ol>li>* {
+  vertical-align: top;
+}
+.editor ul {
+  list-style: disc !important;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
 /* monthly Style
